@@ -1,22 +1,22 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f7ff;
-    color: #333;
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto do Google Fonts */
+    background-color: #f0f7ff; /* Azul claro */
+    color: #333; /* Cor do texto */
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Alterado para empilhar os elementos verticalmente */
+    align-items: center; /* Centralizar os elementos horizontalmente */
 }
 
 h1 {
     text-align: center;
-    color: #007bff;
-    margin-top: 20px;
+    color: #007bff; /* Azul */
+    margin-top: 20px; /* Adicionado espaçamento superior */
 }
 
 form {
-    background-color: #fff;
+    background-color: #fff; /* Branco */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,6 +25,7 @@ form {
 }
 
 input[type="text"],
+input[type="email"], /* Estilização para campo de e-mail */
 input[type="password"],
 button {
     width: 100%;
@@ -33,12 +34,12 @@ button {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto do Google Fonts */
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Branco */
     cursor: pointer;
 }
 
@@ -58,21 +59,10 @@ button:first-child {
     margin-right: 10px;
 }
 
-.image-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .image-container img {
-        max-width: 40%; /* Redimensiona para 40% do tamanho original */
-        height: auto;
-    }
-}
-
-@media (max-width: 767px) {
-    .image-container img {
-        max-width: 70%; /* Redimensiona para 70% do tamanho original */
-        height: auto;
-    }
+.alert {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
